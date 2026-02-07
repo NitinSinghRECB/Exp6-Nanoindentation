@@ -368,68 +368,105 @@ stroke="#ffffff" marker-end="url(#arrow)"/>
 
 <div class="formula-content">
 
-<p><b>Contact Depth</b></p>
-<div class="formula">
-  h<sub>c</sub>
-  <span class="eq">=</span>
-  h<sub>max</sub>
-  <span class="eq">−</span>
-  ε
-  <span class="frac">
-    <span>P</span>
-    <span>S</span>
-  </span>
-</div>
-<p>
-<b>h<sub>max</sub></b> = maximum indentation depth,  
-<b>P</b> = maximum load,  
-<b>S</b> = unloading stiffness,  
-<b>ε ≈ 0.75</b> (Berkovich indenter)
-</p>
+  <p><b>Contact Depth</b></p>
+
+  <div class="formula">
+    <span>h<sub>c</sub></span>
+    <span class="eq">=</span>
+    <span>h<sub>max</sub></span>
+    <span class="eq">−</span>
+    <span>ε</span>
+    <span class="frac">
+      <span>P</span>
+      <span>S</span>
+    </span>
+  </div>
+  
+  <p>
+  <b>h<sub>max</sub></b> = maximum indentation depth,  
+  <b>P</b> = maximum load,  
+  <b>S</b> = unloading stiffness,  
+  <b>ε ≈ 0.75</b> (Berkovich indenter)
+  </p>
+  
+  <hr>
+  
 
 <hr>
 
-<p><b>Projected Contact Area</b></p>
-<div class="formula">
-  A
-  <span class="eq">=</span>
-  f(h<sub>c</sub>)
-</div>
-<p>Area function depends on indenter geometry.</p>
 
-<hr>
-
-<p><b>Hardness</b></p>
+<p><b>Hardness Measurement</b></p>
 <div class="formula">
   H
   <span class="eq">=</span>
   <span class="frac">
-    <span>P</span>
-    <span>A</span>
+    <span>P<sub>max</sub></span>
+    <span>A<sub>c</sub></span>
   </span>
 </div>
-<p>Ratio of maximum load to projected contact area.</p>
+
+<p>
+<b>H</b> = nanoindentation hardness,  
+<b>P<sub>max</sub></b> = maximum applied load,  
+<b>A<sub>c</sub></b> = projected contact area
+</p>
 
 <hr>
 
-<p><b>Elastic Modulus</b></p>
+
+
+<p><b>Elastic Modulus Determination</b></p>
+
 <div class="formula">
-  E
+  E<sub>r</sub>
+  <span class="eq">=</span>
+
+  <span class="frac">
+    <span>1</span>
+    <span>2β</span>
+  </span>
+
+  √(π / A<sub>c</sub>) S
+</div>
+
+<p>
+<b>β</b> = geometry correction factor (≈ 1.034 for Berkovich)
+</p>
+
+
+
+
+
+<hr>
+
+
+<p><b>Specimen Modulus</b></p>
+
+<div class="formula">
+  <span class="frac">
+    <span>1</span>
+    <span>E<sub>r</sub></span>
+  </span>
   <span class="eq">=</span>
   <span class="frac">
-    <span>√π</span>
-    <span>2</span>
+    <span>1 − ν<sub>s</sub><sup>2</sup></span>
+    <span>E<sub>s</sub></span>
   </span>
-  <span class="eq">·</span>
+  <span class="eq">+</span>
   <span class="frac">
-    <span>S</span>
-    <span>√A</span>
+    <span>1 − ν<sub>i</sub><sup>2</sup></span>
+    <span>E<sub>i</sub></span>
   </span>
 </div>
 
-      <p>
-        Calculated using unloading stiffness method.
-      </p>
+<p>
+<b>E<sub>s</sub>, ν<sub>s</sub></b> = modulus and Poisson’s ratio of the specimen, <br>
+<b>E<sub>i</sub>, ν<sub>i</sub></b> = modulus and Poisson’s ratio of the indenter  
+(for diamond: E<sub>i</sub> ≈ 1140 GPa, ν<sub>i</sub> ≈ 0.07)
+</p>
+
+<hr>
+
 
     </div>
   </div>
