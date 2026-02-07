@@ -1,0 +1,1 @@
+### To measure the hardness and elastic modulus of materials using instrumented nanoindentation and to understand how these properties influence wear resistance through parameters such as H/Eand H^3/E^2.
